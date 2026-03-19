@@ -16,7 +16,9 @@ class DemoApp extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.favorite, size: 80, color: Colors.red),
+              ExcludeSemantics(
+                child: Icon(Icons.favorite, size: 80, color: Colors.red),
+              ),
               SizedBox(height: 10),
               Text("I love Flutter"),
             ],

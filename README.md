@@ -1,21 +1,58 @@
 # ExcludeSemantics Demo
 
 **Widget:** ExcludeSemantics  
-**Date of In-class Presentation:** 06 March 2026
 
-## Description
-A small Flutter demo showing how `ExcludeSemantics` hides a widget from accessibility tools while leaving the UI unchanged.
+---
 
-## Run Instructions
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/exclude_semantics_demo.git`
-2. Open in VS Code.
-3. Run: `flutter pub get`
-4. Run: `flutter run -d chrome` or your preferred device.
+## 🧠 What is ExcludeSemantics?
 
-## Attributes Demonstrated
-1. **child** – The widget wrapped by ExcludeSemantics; determines what gets hidden from accessibility.
-2. **excluding** – Defaults to true; if false, the child is included again in the semantic tree.
-3. **explicitChildNodes** – Controls how nested children are handled; shows flexibility in accessibility design.
+`ExcludeSemantics` is a Flutter widget used to remove its child widget from the accessibility tree.
 
-## Screenshot
-![Demo Screenshot](screenshot.png)
+This means the widget is still visible on the screen, but it will be ignored by screen readers like TalkBack or VoiceOver.
+
+---
+
+## 💡 Why is it useful?
+
+In real-world applications, some UI elements are only decorative (like icons or images).  
+Using `ExcludeSemantics` prevents accessibility tools from reading unnecessary or confusing information.
+
+---
+
+## 🎬 Demo Explanation (Before → After)
+
+This demo shows a simple example:
+
+- **Before:**  
+  A heart icon is displayed and is accessible to screen readers.
+
+- **After:**  
+  The same heart icon is wrapped with `ExcludeSemantics`.  
+  It still appears on the screen, but it is ignored by accessibility tools.
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository:
+
+git clone https://github.com/benigne811/exclude_semantics_demo.git
+
+
+2. Open the project in VS Code
+
+3. Run the following commands:
+
+flutter pub get
+flutter run
+
+
+## 🖼️ Screenshot
+
+![App Screenshot]( https://screenrec.com/share/cm9wjVp67l )
+
+---
+
+## 🎥 Demo Video
+
+[Watch Demo Video]( https://screenrec.com/share/4lrIEDe9vo )
