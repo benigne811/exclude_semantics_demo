@@ -49,7 +49,7 @@ flutter run
 
 ## 🖼️ Screenshot
 
-![App Screenshot]( https://screenrec.com/share/cm9wjVp67l )
+![App Screenshot]( assets/Exclude_semantics.png )
 
 ---
 
