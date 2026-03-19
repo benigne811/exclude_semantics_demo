@@ -1,16 +1,21 @@
-# exclude_semantics
+# ExcludeSemantics Demo
 
-A new Flutter project.
+**Widget:** ExcludeSemantics  
+**Date of In-class Presentation:** 06 March 2026
 
-## Getting Started
+## Description
+A small Flutter demo showing how `ExcludeSemantics` hides a widget from accessibility tools while leaving the UI unchanged.
 
-This project is a starting point for a Flutter application.
+## Run Instructions
+1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/exclude_semantics_demo.git`
+2. Open in VS Code.
+3. Run: `flutter pub get`
+4. Run: `flutter run -d chrome` or your preferred device.
 
-A few resources to get you started if this is your first Flutter project:
+## Attributes Demonstrated
+1. **child** – The widget wrapped by ExcludeSemantics; determines what gets hidden from accessibility.
+2. **excluding** – Defaults to true; if false, the child is included again in the semantic tree.
+3. **explicitChildNodes** – Controls how nested children are handled; shows flexibility in accessibility design.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshot
+![Demo Screenshot](screenshot.png)

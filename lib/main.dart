@@ -1,31 +1,22 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(DemoApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class DemoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Semantics Demo')),
+        appBar: AppBar(title: Text("ExcludeSemantics Demo")),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [ 
-              ExcludeSemantics(
-                child: Icon(Icons.favorite, size: 80, color: Colors.red),
-              ),
+            mainAxisSize: MainAxisSize.min,
+            children: [
               Icon(Icons.favorite, size: 80, color: Colors.red),
-              SizedBox(height: 20),
-              Text(
-                'Like Button',
-                style: TextStyle(fontSize: 20),
-              ),
+              SizedBox(height: 10),
+              Text("I love Flutter"),
             ],
           ),
         ),
